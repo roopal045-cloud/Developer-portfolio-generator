@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio Generator</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <div class="container">
+
+    <!-- LEFT SIDE: FORM -->
+    <div class="form-section">
+      <h2>Create Your Portfolio</h2>
+
+      <input type="text" id="name" placeholder="Your Name" />
+
+      <textarea id="about" placeholder="About You"></textarea>
+
+      <input type="text" id="skills" placeholder="Skills (comma separated)" />
+
+      <input type="text" id="projects" placeholder="Projects (comma separated)" />
+
+      <input type="text" id="github" placeholder="GitHub Link" />
+
+      <input type="text" id="linkedin" placeholder="LinkedIn Link" />
+
+      <button onclick="generatePortfolio()">Generate</button>
+    </div>
+
+    <!-- RIGHT SIDE: PREVIEW -->
+    <div class="preview-section">
+      <h2>Live Preview</h2>
+
+      <div id="preview">
+        <h1>Your Name</h1>
+        <p>About you will appear here...</p>
+
+        <h3>Skills</h3>
+        <ul id="preview-skills"></ul>
+
+        <h3>Projects</h3>
+        <ul id="preview-projects"></ul>
+
+        <div class="links">
+          <a href="#" id="preview-github">GitHub</a>
+          <a href="#" id="preview-linkedin">LinkedIn</a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
